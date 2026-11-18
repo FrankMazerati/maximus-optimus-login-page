@@ -17,7 +17,7 @@ export function SecuritySignature({ className }: { className?: string }) {
   return (
     <p className={cn("font-display text-[0.65rem] font-semibold uppercase tracking-[0.2em] env-transition", className)}>
       <span className="text-env-accent">Secured.</span> <span className="text-env-accent">Trusted.</span>{" "}
-      <span className="text-foreground">&amp;</span> <span className="text-env-accent">Compliant.</span>
+      <span className="text-env-accent">&amp;</span> <span className="text-env-accent">Compliant.</span>
     </p>
   );
 }

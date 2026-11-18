@@ -30,9 +30,6 @@ export function SiteFooter() {
         <div className="mt-10 flex flex-col gap-4 border-t border-foreground/10 pt-6 md:flex-row md:items-center md:justify-between">
           <BrandLockup compact />
           <p className="text-xs text-footer-link">© 2026 IntelliStack Systems. All Rights Reserved.</p>
-          <p className="font-display text-xs font-bold uppercase tracking-[0.2em] text-footer-link">
-            One Team. One Platform. One Planet.
-          </p>
         </div>
       </div>
     </footer>
