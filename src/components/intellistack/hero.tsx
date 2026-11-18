@@ -7,13 +7,6 @@ export function Hero() {
       <p className="mt-3 font-display text-lg font-semibold uppercase tracking-[0.22em] text-foreground sm:text-2xl">
         Global Operations Center
       </p>
-      <p
-        className="mt-5 whitespace-nowrap font-display font-bold uppercase tracking-[0.16em] text-foreground env-transition"
-        style={{ fontSize: "clamp(0.5rem, 2.15vw, 1.05rem)" }}
-      >
-        One <span className="text-env-accent">World.</span> One <span className="text-env-accent">System.</span> One
-        Intelligent <span className="text-env-accent">Network.</span>
-      </p>
     </section>
   );
 }

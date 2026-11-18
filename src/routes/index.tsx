@@ -48,13 +48,15 @@ function Index() {
     <div data-env={env} className="relative min-h-screen overflow-x-hidden">
       <div aria-hidden="true" className="fixed inset-0 -z-0 bg-cover bg-center" style={{ backgroundImage: `url(${background.src})` }} />
       <div aria-hidden="true" className="fixed inset-0 -z-0 bg-gradient-to-b from-background/40 via-background/70 to-background" />
-      <SiteHeader background={background} />
+      <SiteHeader />
       <Hero />
       <main className="relative z-10 mx-auto grid max-w-[1600px] gap-6 px-4 pb-12 sm:px-6 lg:grid-cols-12 lg:px-10">
-        <p className="font-display text-center text-sm font-bold uppercase leading-snug tracking-[0.12em] text-foreground sm:whitespace-nowrap sm:text-base lg:col-span-12 lg:text-xl">
-          See everything <span className="env-text-glow env-transition">locally.</span>{" "}
-          Connect everything <span className="env-text-glow env-transition">globally.</span>{" "}
-          Powered by <span className="env-text-glow env-transition">intelligence.</span>
+        <p
+          className="text-center whitespace-nowrap font-display font-bold uppercase tracking-[0.16em] text-foreground env-transition lg:col-span-12"
+          style={{ fontSize: "clamp(0.55rem, 2.3vw, 1.25rem)" }}
+        >
+          One <span className="text-env-accent">World.</span> One <span className="text-env-accent">System.</span> One
+          Intelligent <span className="text-env-accent">Network.</span>
         </p>
         <div className="glass-panel space-y-6 rounded-2xl p-4 sm:p-6 lg:col-span-9 env-transition">
           <EnvironmentSelector value={env} onChange={setEnv} />
