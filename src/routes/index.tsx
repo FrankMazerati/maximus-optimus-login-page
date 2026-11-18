@@ -51,6 +51,11 @@ function Index() {
       <SiteHeader background={background} />
       <Hero />
       <main className="relative z-10 mx-auto grid max-w-[1600px] gap-6 px-4 pb-12 sm:px-6 lg:grid-cols-12 lg:px-10">
+        <p className="font-display text-center text-sm font-bold uppercase leading-snug tracking-[0.12em] text-foreground sm:whitespace-nowrap sm:text-base lg:col-span-12 lg:text-xl">
+          See everything <span className="env-text-glow env-transition">locally.</span>{" "}
+          Connect everything <span className="env-text-glow env-transition">globally.</span>{" "}
+          Powered by <span className="env-text-glow env-transition">intelligence.</span>
+        </p>
         <div className="glass-panel space-y-6 rounded-2xl p-4 sm:p-6 lg:col-span-9 env-transition">
           <EnvironmentSelector value={env} onChange={setEnv} />
           {env === "purple" && <PlatformToggle value={platform} onChange={setPlatform} />}
