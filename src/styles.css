@@ -57,8 +57,6 @@
   --color-panel: var(--panel);
   --color-footer-link: var(--footer-link);
   --color-provider-tile: var(--provider-tile);
-  --color-apple-tile: var(--apple-tile);
-  --color-apple-ink: var(--apple-ink);
   --color-env-blue: var(--env-blue-accent);
   --color-env-purple: var(--env-purple-accent);
   --color-env-green: var(--env-green-accent);
@@ -120,8 +118,6 @@
   --panel: oklch(0.144 0.024 260.2 / 72%);
   --footer-link: oklch(0.864 0.025 259.8);
   --provider-tile: oklch(0.187 0.002 286.2 / 85%);
-  --apple-tile: oklch(1 0 0);
-  --apple-ink: oklch(0 0 0);
 }
 
 [data-env="purple"] {

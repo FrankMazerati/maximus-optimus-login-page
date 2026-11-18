@@ -1,9 +1,9 @@
 import type { EnvironmentId } from "./environments";
 
-export type FeaturedProviderId = "google" | "microsoft365" | "entra" | "aws" | "github" | "apple";
+export type FeaturedProviderId = "google" | "microsoft365" | "entra" | "aws" | "github" | "linkedin";
 
 /** Lovable Cloud provider used for sign-in, or null when the integration isn't set up yet. */
-export type CloudProvider = "google" | "microsoft" | "apple" | null;
+export type CloudProvider = "google" | "microsoft" | null;
 
 export type FeaturedProvider = {
   id: FeaturedProviderId;
@@ -18,7 +18,7 @@ export const FEATURED_PROVIDERS: FeaturedProvider[] = [
   { id: "entra", name: "Microsoft Entra ID", cloudProvider: "microsoft", environments: ["blue", "purple", "green"] },
   { id: "aws", name: "AWS", cloudProvider: null, environments: ["blue", "green"] },
   { id: "github", name: "GitHub", cloudProvider: null, environments: ["blue", "purple"] },
-  { id: "apple", name: "Apple", cloudProvider: "apple", environments: ["blue", "purple", "green"] },
+  { id: "linkedin", name: "LinkedIn", cloudProvider: null, environments: ["blue", "purple", "green"] },
 ];
 
 export type DirectoryProvider = {

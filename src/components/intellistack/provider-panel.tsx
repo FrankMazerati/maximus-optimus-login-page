@@ -62,7 +62,6 @@ export const ProviderPanel = forwardRef<HTMLDivElement, { env: EnvironmentId; di
           {FEATURED_PROVIDERS.map((p) => {
             const available = p.environments.includes(env);
             const ready = available && !!p.cloudProvider;
-            const isApple = p.id === "apple";
             return (
               <button
                 key={p.id}
@@ -73,7 +72,7 @@ export const ProviderPanel = forwardRef<HTMLDivElement, { env: EnvironmentId; di
                 className={cn(
                   "group relative flex min-h-[4.75rem] flex-col items-center justify-center gap-1.5 rounded-lg border px-2 py-3 text-center env-transition",
                   "hover:border-env-accent hover:shadow-env-glow active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-env-accent",
-                  isApple ? "bg-apple-tile text-apple-ink" : "bg-provider-tile text-foreground",
+                  "bg-provider-tile text-foreground",
                   available ? "border-env-accent/45" : "border-env-accent/20 opacity-60",
                 )}
               >
@@ -81,7 +80,7 @@ export const ProviderPanel = forwardRef<HTMLDivElement, { env: EnvironmentId; di
                 <span className="text-[0.7rem] leading-tight opacity-80">Continue with</span>
                 <span className="text-xs font-semibold leading-tight">{p.name}</span>
                 {!ready && (
-                  <span className={cn("absolute right-1.5 top-1.5 rounded px-1 text-[0.55rem] font-semibold uppercase tracking-wider", isApple ? "bg-apple-ink/10" : "bg-env-deep text-env-accent")}>
+                  <span className={cn("absolute right-1.5 top-1.5 rounded px-1 text-[0.55rem] font-semibold uppercase tracking-wider", "bg-env-deep text-env-accent")}>
                     {available ? "Setup needed" : "N/A"}
                   </span>
                 )}
